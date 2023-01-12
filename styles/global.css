@@ -1,5 +1,5 @@
 :root {
-    --background: rgb(224, 234, 247);
+    --background: rgb(247, 247, 247);
     --header-background: rgb(254, 251, 245);
     --primary-font: Corbel, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans',
         'Bitstream Vera Sans', 'Liberation Sans', Verdana, 'Verdana Ref', sans-serif;
@@ -31,5 +31,59 @@ header .logo {
 }
 
 main {
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/background2.jpg);
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 0.1em;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.shells {
+    display: flex;
+    flex-direction: row;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.shell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.shell img {
+    width: 100%;
+}
+
+/* .hiding-place {
+    position: relative;
+    z-index: 20;
+} */
+
+/* .pearl::after {
+    position: absolute;
+    background-image: url(../assets/pearl.png);
+    z-index: 30;
+} */
+
+/* .shell {
+    position: relative;
+} */
+
+.reveal::after {
+    font-size: 3rem;
+    content: '🔘';
+    position: relative;
 }
