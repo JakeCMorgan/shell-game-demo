@@ -64,8 +64,26 @@ main {
 }
 
 .shell img {
-    width: 120%;
+    width: 100%;
 }
 
-.pearl .reveal {
+/* .hiding-place {
+    position: relative;
+    z-index: 20;
+} */
+
+/* .pearl::after {
+    position: absolute;
+    background-image: url(../assets/pearl.png);
+    z-index: 30;
+} */
+
+/* .shell {
+    position: relative;
+} */
+
+.reveal::after {
+    font-size: 3rem;
+    content: '🔘';
+    position: relative;
 }
